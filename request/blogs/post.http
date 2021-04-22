@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/blogs HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBhcGFuYXRhcyIsImlkIjoiNjA4MTQ3NGM5ZTFiMDkxZjI0NmM4MjFjIiwiaWF0IjoxNjE5MDkwNjgxfQ.lFrRGxc9lSD4-hGkvHHxIDjs_kBiLIej8ol3JV_6Ljc
+
+{
+    "title": "El jardin de los gatos",
+    "author": "Silvia Laso, Monica y otra más",
+    "url": "eljardindelasmusas.com",
+    "likes": 10
+}
