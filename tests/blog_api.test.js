@@ -73,6 +73,22 @@ test('blogs are created when POST request are made', async () => {
     
 })
 
+test('blogs receive 401 if there is no token', async () => {
+    const blog = {
+        title: 'Ruben web',
+        author: 'Ruben Tigre',
+        url: 'www.tigre.com',
+        likes: 30
+    }
+
+    await api
+    .post('/api/blogs')
+    .send(blog)
+    .expect(401)
+
+    
+})
+
 test('blogs are saved with 0 likes as default', async () => {
     const blog = {
         title: 'Paquita salas',
